@@ -15,7 +15,7 @@
 <!--    </appender>-->
 
     <!-- LOG everything at INFO level -->
-    <root level="INFO">
+    <root level="TRACE">
         <appender-ref ref="CONSOLE" />
     </root>
 
@@ -24,4 +24,7 @@
 
     <!-- LOG "org.infinispan*" at TRACE level -->
     <logger name="org.infinispan" level="info"/>
+    <Logger name="org.infinispan.CLUSTER" level="trace"/>
+    <Logger name="org.infinispan.CONFIG" level="trace"/>
+    <Logger name="org.jgroups" level="trace"/>
 </configuration>

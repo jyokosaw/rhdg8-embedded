@@ -63,8 +63,8 @@ Deploying your client application on OCP requires to create several Openshift ob
 [source, bash]
 ----
 export APP_NAME=rhdg
-export NAMESPACE=rhdg8-embedded
-export GIT_REPO=https://github.com/alvarolop/rhdg8-embedded.git
+export NAMESPACE=rhdg8-embedded-jy
+export GIT_REPO=https://github.com/jyokosaw/rhdg8-embedded.git
 ----
 
 First, create a project to host the application:
