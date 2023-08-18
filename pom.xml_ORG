@@ -8,20 +8,18 @@
     <version>1.0.0</version>
 
     <properties>
-        <version.spring.boot>3.1.2</version.spring.boot>
-        <!--<version.spring.session>2.3.0.RELEASE</version.spring.session>-->
+        <version.spring.boot>2.3.4.RELEASE</version.spring.boot>
+        <version.spring.session>2.3.0.RELEASE</version.spring.session>
         <!-- RHDG 8.1.1 -->
-        <!--<version.infinispan>11.0.9.Final-redhat-00001</version.infinispan>-->
+        <version.infinispan>11.0.9.Final-redhat-00001</version.infinispan>
         <!-- RHDG 8.2.0 -->
 <!--        <version.infinispan>12.1.3.Final-redhat-00001</version.infinispan>-->
         <!-- RHDG 8.2.1 -->
 <!--        <version.infinispan>12.1.7.Final-redhat-00001</version.infinispan>-->
         <!-- RHDG 8.3.0 -->
         <!--<version.infinispan>13.0.0.Final</version.infinispan>-->
-        <!-- RHDG 8.4.2 -->
-        <version.infinispan>14.0.9.Final-redhat-00001</version.infinispan>
-        <lombok.version>1.18.22</lombok.version>
-        <java.version>17</java.version>
+        <lombok.version>1.18.18</lombok.version>
+        <java.version>11</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -116,46 +114,6 @@
                     </execution>
                 </executions>
             </plugin>
-
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.8.1</version>
-                <configuration>
-                    <source>17</source>
-                    <target>17</target>
-                    <!--                    <release>16</release>-->
-                    <!--<fork>true</fork>-->
-                    <compilerArgs>
-                        <arg>--enable-preview</arg>
-                        <arg>-Xlint:all</arg>
-                        <arg>-J--add-opens=jdk.compiler/com.sun.tools.javac.code=ALL-UNNAMED</arg>
-                        <arg>-J--add-opens=jdk.compiler/com.sun.tools.javac.comp=ALL-UNNAMED</arg>
-                        <arg>-J--add-opens=jdk.compiler/com.sun.tools.javac.file=ALL-UNNAMED</arg>
-                        <arg>-J--add-opens=jdk.compiler/com.sun.tools.javac.main=ALL-UNNAMED</arg>
-                        <arg>-J--add-opens=jdk.compiler/com.sun.tools.javac.model=ALL-UNNAMED</arg>
-                        <arg>-J--add-opens=jdk.compiler/com.sun.tools.javac.parser=ALL-UNNAMED</arg>
-                        <arg>-J--add-opens=jdk.compiler/com.sun.tools.javac.processing=ALL-UNNAMED</arg>
-                        <arg>-J--add-opens=jdk.compiler/com.sun.tools.javac.tree=ALL-UNNAMED</arg>
-                        <arg>-J--add-opens=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED</arg>
-                        <arg>-J--add-opens=jdk.compiler/com.sun.tools.javac.jvm=ALL-UNNAMED</arg>
-                    </compilerArgs>
-                    <!--for unmappable characters in classes-->
-                    <encoding>UTF-8</encoding>
-                    <showDeprecation>true</showDeprecation>
-                    <showWarnings>true</showWarnings>
-                    <!--for lombok annotations to resolve-->
-                    <!--contradictory to maven, intelliJ fails with this-->
-                    <annotationProcessorPaths>
-                        <path>
-                            <groupId>org.projectlombok</groupId>
-                            <artifactId>lombok</artifactId>
-                            <version>1.18.22</version>
-                        </path>
-                    </annotationProcessorPaths>
-                </configuration>
-            </plugin>
-
         </plugins>
     </build>
 
