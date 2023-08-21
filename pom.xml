@@ -8,7 +8,7 @@
     <version>1.0.0</version>
 
     <properties>
-        <version.spring.boot>3.1.2</version.spring.boot>
+        <version.spring.boot>2.7.14</version.spring.boot>
         <!--<version.spring.session>2.3.0.RELEASE</version.spring.session>-->
         <!-- RHDG 8.1.1 -->
         <!--<version.infinispan>11.0.9.Final-redhat-00001</version.infinispan>-->
