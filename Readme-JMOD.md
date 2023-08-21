@@ -4,10 +4,11 @@
 
 Ref. https://prettytabby.com/github-tips3/
 
-1. 上記を参考に`access token`を生成して、トークンをコピー
+1. 上記を参考に`access token`を生成して、トークンをコピー<br/>
+   トークンを生成する際、[こちら](https://ios-docs.dev/20210813support-for-password/)を参考に権限を付与。いくつか付与する必要あり。
 2. git のリモートURLに取得したアクセストークンを追加する
    ```agsl
-   git remote set-url origin https://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@github.com/jyokosaw/rhdg8-embedded.git
+   git remote set-url origin https://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@github.com/jyokosaw/rhdg8-embedded.git
    ```
 
 ## github にローカルの変更を反映する方法
